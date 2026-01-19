@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+     <link rel="icon" href="TM-modified.png" type="image/x-icon">
+    <link rel="stylesheet" href="TM.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>My Tasks</h1>
+
+    <div class="top-controls">
+        <select id="moodSelect">
+            <option value="calm">Calm</option>
+            <option value="focused">Focused</option>
+            <option value="energetic">Energetic</option>
+        </select>
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+        <span id="progressText">0 / 0</span>
+    </div>
+
+    <div class="input">
+        <input id="taskInput" type="text" placeholder="Add a new task">
+        <button id="addBtn">Add</button>
+    </div>
+
+    <div id="sections">
+        <div class="section" data-section="Morning"><h3>Morning</h3><div class="taskList"></div></div>
+        <div class="section" data-section="Afternoon"><h3>Afternoon</h3><div class="taskList"></div></div>
+        <div class="section" data-section="Evening"><h3>Evening</h3><div class="taskList"></div></div>
+    </div>
+
+    <div id="congratsMsg"> Congrats! You completed all tasks for today!</div>
+</div>
+
+<script src="TM.JS"></script>
+</body>
+</html>
